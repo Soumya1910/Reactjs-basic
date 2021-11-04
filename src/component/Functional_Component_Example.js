@@ -1,7 +1,11 @@
 import React from 'react'
 
-function Greet(){
-    return <h1>Hello Soumya</h1>
-}
+// By defining a normal function
+// function Greet(){
+//     return <h1>Hello Soumya</h1>
+// }
+
+// By using arrow function
+const Greet = ()=> <h1>Hello Soumya</h1>
 
 export default Greet
