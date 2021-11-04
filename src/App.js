@@ -6,6 +6,7 @@ import Message from './component/State_Component_Example';
 import Counter from './component/Counter';
 import FunctionClick from './component/FunctionClick';
 import ClassClick from './component/ClassClick';
+import EventBind from './component/EventBind';
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
       {/* <Message /> */}
       {/* <Counter/> */}
       {/* <FunctionClick /> */}
-      <ClassClick ></ClassClick>
+      {/* <ClassClick ></ClassClick> */}
+      <EventBind/>
     </div>
   );
 }
