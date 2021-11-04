@@ -14,7 +14,9 @@ function App() {
       </Greet>
       <Greet name="Rajesh" age="28"/>
       <Greet name="Priyanka" age="30"/>
-      {/* <Welcome/> */}
+      <Welcome place="Burdwan"/>
+      <Welcome place="Kolkata"/>
+      <Welcome place="Asansol"/>
     </div>
   );
 }
