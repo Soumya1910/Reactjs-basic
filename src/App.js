@@ -4,7 +4,8 @@ import Greet from './component/Functional_Component_Example';
 import Welcome from './component/Class_Component_Example';
 import Message from './component/State_Component_Example';
 import Counter from './component/Counter';
-import FunctionClick from './component/FunctionClick'
+import FunctionClick from './component/FunctionClick';
+import ClassClick from './component/ClassClick';
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
       <Welcome place="Asansol"/> */}
       {/* <Message /> */}
       {/* <Counter/> */}
-      <FunctionClick />
+      {/* <FunctionClick /> */}
+      <ClassClick ></ClassClick>
     </div>
   );
 }
