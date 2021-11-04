@@ -11,21 +11,35 @@ class Counter extends Component {
     increment() {
         // this.state.count = this.state.count + 1 // only console will be incrmented where as it's not rendering to the portal
 
-        this.setState(
-            {
-                count: this.state.count + 1
-            },
-            () => {
-                console.log(`callback function is called with count = ${this.state.count}`)
-            }
-        )
-        console.log(`Outside function call : ${this.state.count}`)
+        // this.setState(
+        //     {
+        //         count: this.state.count + 1
+        //     },
+        //     () => {
+        //         console.log(`callback function is called with count = ${this.state.count}`)
+        //     }
+        // )
+        // console.log(`Outside function call : ${this.state.count}`)
+
+
+        this.setState((prevState)=> ({
+            count : this.state.count + 1
+        }))
+        console.log(`State count : ${this.state.count}`)
+    }
+
+    incrementFive(){
+        this.increment()
+        this.increment()
+        this.increment()
+        this.increment()
+        this.increment()
     }
     render() {
         return (
             <div>
                 <h4>Count {this.state.count} </h4>
-                <button onClick={() => this.increment()}>Increment</button>
+                <button onClick={() => this.incrementFive()}>Increment</button>
             </div>
         )
     }
