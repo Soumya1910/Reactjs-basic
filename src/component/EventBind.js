@@ -9,14 +9,20 @@ class EventBind extends Component {
              message : 'Hello'
         }
 
-        this.clickHandler = this.clickHandler.bind(this)
+        // this.clickHandler = this.clickHandler.bind(this)
     }
     
-    clickHandler(){
+    // clickHandler(){
+    //     this.setState({
+    //         message: "Good Bye"
+    //     })
+    //     console.log(this)
+    // }
+
+    clickHandler = () => {
         this.setState({
-            message: "Good Bye"
+            message : "GoodBye!"
         })
-        console.log(this)
     }
 
     render() {
@@ -25,7 +31,8 @@ class EventBind extends Component {
                 {this.state.message}<br/>
                 {/* <button onClick = {this.clickHandler.bind(this)}>Click Me : Event Binding Approach 1</button>*/}
                 {/* <button onClick={ () => {this.clickHandler()}}>Click Me : Event Binding Approach 2</button> */}
-                <button onClick = {this.clickHandler}>Click Me: Event Binding in class Constructor: Approach 3</button>
+                {/* <button onClick = {this.clickHandler}>Click Me: Event Binding in class Constructor: Approach 3</button> */}
+                <button onClick = {this.clickHandler}>Click Me: Event binding by defining arrow function : Approach 4</button>
             </div>
         )
     }
