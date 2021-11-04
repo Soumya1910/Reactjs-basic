@@ -1,0 +1,34 @@
+import React, { Component } from 'react'
+
+class Counter extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            count: 0
+        }
+    }
+
+    increment() {
+        // this.state.count = this.state.count + 1 // only console will be incrmented where as it's not rendering to the portal
+
+        this.setState(
+            {
+                count: this.state.count + 1
+            },
+            () => {
+                console.log(`callback function is called with count = ${this.state.count}`)
+            }
+        )
+        console.log(`Outside function call : ${this.state.count}`)
+    }
+    render() {
+        return (
+            <div>
+                <h4>Count {this.state.count} </h4>
+                <button onClick={() => this.increment()}>Increment</button>
+            </div>
+        )
+    }
+}
+
+export default Counter

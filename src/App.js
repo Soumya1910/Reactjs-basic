@@ -3,6 +3,7 @@ import './App.css';
 import Greet from './component/Functional_Component_Example';
 import Welcome from './component/Class_Component_Example';
 import Message from './component/State_Component_Example';
+import Counter from './component/Counter';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       <Welcome place="Burdwan"/>
       <Welcome place="Kolkata"/>
       <Welcome place="Asansol"/> */}
-      <Message />
+      {/* <Message /> */}
+      <Counter/>
     </div>
   );
 }
