@@ -6,6 +6,6 @@ import React from 'react'
 // }
 
 // By using arrow function
-const Greet = ()=> <h1>Hello Soumya</h1>
+const Greet = (props)=> <h1>Hello {props.name}! This is example of functional component</h1>
 
 export default Greet

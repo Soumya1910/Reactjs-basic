@@ -4,7 +4,7 @@ class Welcome extends Component {
     render() {
         return (
             <div>
-                Class Component
+                Hello Soumya! This is example of Class Component.
             </div>
         )
     }

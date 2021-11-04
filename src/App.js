@@ -6,8 +6,11 @@ import Welcome from './component/Class_Component_Example';
 function App() {
   return (
     <div className="App">
-      {/* <Greet/> */}
-      <Welcome/>
+      <Greet name="Soumya" />
+      <Greet name="Sayan" />
+      <Greet name="Rajesh" />
+      <Greet name="Priyanka" />
+      {/* <Welcome/> */}
     </div>
   );
 }
