@@ -10,6 +10,7 @@ import EventBind from './component/EventBind';
 import ParentComponent from './component/ParentComponent';
 import Greetings from './component/Greetings';
 import List_Rendering from './component/List_Rendering';
+import Form from './component/Form';
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
       {/* <EventBind/> */}
       {/* <ParentComponent /> */}
       {/* <Greetings /> */}
-      <List_Rendering />
+      {/* <List_Rendering /> */}
+      <Form />
     </div>
   );
 }
