@@ -11,6 +11,7 @@ import ParentComponent from './component/ParentComponent';
 import Greetings from './component/Greetings';
 import List_Rendering from './component/List_Rendering';
 import Form from './component/Form';
+import LifeCycleA from './component/LifeCycleA';
 
 function App() {
   return (
@@ -34,7 +35,8 @@ function App() {
       {/* <ParentComponent /> */}
       {/* <Greetings /> */}
       {/* <List_Rendering /> */}
-      <Form />
+      {/* <Form /> */}
+      <LifeCycleA />
     </div>
   );
 }
