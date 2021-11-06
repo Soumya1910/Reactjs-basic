@@ -1,4 +1,5 @@
 import React from 'react'
+import Person from './Person';
 
 function List_Rendering() {
     /*const names = ['Soumya', 'Sayan', 'Priyanka']
@@ -18,8 +19,14 @@ function List_Rendering() {
         </div>
     )*/
 
-    const persons = [{"id": 1, "name": "Soumya", "age": 10}, {"id": 1, "name": "Avik", "age": 20}, {"id": 2, "name": "Priyanka", "age": 30}]
+    /*const persons = [{"id": 1, "name": "Soumya", "age": 10}, {"id": 1, "name": "Avik", "age": 20}, {"id": 2, "name": "Priyanka", "age": 30}]
     const personList = persons.map(person => (<div> <h4>I'm {person.name}. I am {person.age} years old.</h4></div>))
+    return (
+        <div>{personList}</div>
+    )*/
+
+    const persons = [{"id": 1, "name": "Soumya", "age": 10}, {"id": 2, "name": "Avik", "age": 20}, {"id": 3, "name": "Priyanka", "age": 30}]
+    const personList = persons.map(person => (<Person key = {person.id} personProps={person}/>)) // key is not accessible to child component
     return (
         <div>{personList}</div>
     )

@@ -32,9 +32,9 @@ class Greetings extends Component {
     }*/
 
     // approach 3: Ternary conditinal operator
-    render(){
+    /*render(){
         return this.state.isLoggedIn ? <div>Welcome Soumya</div> : <div>Welcome Guest</div>
-    }
+    }*/
 
     // approach 4: short circuit operator
     render(){
