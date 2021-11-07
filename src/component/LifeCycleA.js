@@ -20,6 +20,25 @@ class LifeCycleA extends Component {
         console.log(`LifeCycleA componentDidMount called`);
     }
 
+    shouldComponentUpdate(){
+        console.log(`LifeCycleA shouldComponentUpdate method called`);
+        return true;
+    }
+
+    getSnapshotBeforeUpdate(prevProps, prevState){
+        console.log(`LifeCycleA getSnapshotBeforeUpdate called`);
+        return null;
+    }
+
+    componentDidUpdate(){
+        console.log(`LifeCycleA componentDidUpdate called`);
+    }
+
+    changeState = ()=> {
+        this.setState({
+            name : "state is updated"
+        });
+    }
     
     
     render() {
@@ -28,6 +47,7 @@ class LifeCycleA extends Component {
             <div>
                <div>LifeCycleA called</div> 
                <LifeCycleA_Child />
+               <button onClick= {this.changeState}>Change State</button>
             </div>
         )
     }
