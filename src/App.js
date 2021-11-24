@@ -12,6 +12,8 @@ import Greetings from './component/Greetings';
 import List_Rendering from './component/List_Rendering';
 import Form from './component/Form';
 import LifeCycleA from './component/LifeCycleA';
+import ReactFragment from './component/React-Fragment';
+import Table from './component/Table';
 
 function App() {
   return (
@@ -36,7 +38,9 @@ function App() {
       {/* <Greetings /> */}
       {/* <List_Rendering /> */}
       {/* <Form /> */}
-      <LifeCycleA />
+      {/* <LifeCycleA /> */}
+      <ReactFragment/>
+      <Table />
     </div>
   );
 }
