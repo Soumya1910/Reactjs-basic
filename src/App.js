@@ -18,6 +18,7 @@ import PureComponentExample from './component/PureComponentExample';
 import ParentComponentWithPureCompExample from './component/ParentComponentWithPureCompExample';
 import RefComponent from './component/RefComponent';
 import RefExample from './component/RefExample';
+import FwdRefParentInput from './component/FwdRefParentInput';
 
 function App() {
   return (
@@ -47,7 +48,8 @@ function App() {
       <Table /> */}
       {/* <ParentComponentWithPureCompExample/>       */}
       {/* <RefComponent /> */}
-      <RefExample/>
+      {/* <RefExample/> */}
+      <FwdRefParentInput/>
     </div>
   );
 }
