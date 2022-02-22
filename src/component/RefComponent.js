@@ -6,6 +6,12 @@ UseCases:
     2. Fetch the input value
 */
 
+/*
+    1. Declare and initialize Ref under constructor
+    2. Give the reference in render method
+    3. mention the focus statement in componentDidMount()
+*/
+
 
 class RefComponent extends Component {c
 
