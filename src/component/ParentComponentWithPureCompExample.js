@@ -1,4 +1,5 @@
 import React, { Component, PureComponent } from 'react'
+import MemoComponent from './MemoComponent'
 import PureComponentExample from './PureComponentExample'
 import RegularComponent from './RegularComponent'
 
@@ -35,8 +36,14 @@ class ParentComponentWithPureCompExample extends Component {
         return (
             <div>
                 Parent Component With Pure vs Regular Component Example
-                <RegularComponent name={this.state.name} />
-                <PureComponentExample name={this.state.name} />
+                {/* <RegularComponent name={this.state.name} />
+                <PureComponentExample name={this.state.name} /> */}
+                <MemoComponent name={this.state.name}/>
+
+                {/*
+                    Pure component can be applied for Class Component. Similar functionality can be achieved for Functional component with React.memo()
+                    
+                */}
             </div>
         )
     }
