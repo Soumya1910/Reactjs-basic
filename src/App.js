@@ -16,6 +16,7 @@ import ReactFragment from './component/React-Fragment';
 import Table from './component/Table';
 import PureComponentExample from './component/PureComponentExample';
 import ParentComponentWithPureCompExample from './component/ParentComponentWithPureCompExample';
+import RefComponent from './component/RefComponent';
 
 function App() {
   return (
@@ -43,7 +44,8 @@ function App() {
       {/* <LifeCycleA /> */}
       {/* <ReactFragment/>
       <Table /> */}
-      <ParentComponentWithPureCompExample/>      
+      {/* <ParentComponentWithPureCompExample/>       */}
+      <RefComponent />
     </div>
   );
 }
