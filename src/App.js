@@ -14,6 +14,8 @@ import Form from './component/Form';
 import LifeCycleA from './component/LifeCycleA';
 import ReactFragment from './component/React-Fragment';
 import Table from './component/Table';
+import PureComponentExample from './component/PureComponentExample';
+import ParentComponentWithPureCompExample from './component/ParentComponentWithPureCompExample';
 
 function App() {
   return (
@@ -39,8 +41,9 @@ function App() {
       {/* <List_Rendering /> */}
       {/* <Form /> */}
       {/* <LifeCycleA /> */}
-      <ReactFragment/>
-      <Table />
+      {/* <ReactFragment/>
+      <Table /> */}
+      <ParentComponentWithPureCompExample/>      
     </div>
   );
 }
