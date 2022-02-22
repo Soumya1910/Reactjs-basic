@@ -17,6 +17,7 @@ import Table from './component/Table';
 import PureComponentExample from './component/PureComponentExample';
 import ParentComponentWithPureCompExample from './component/ParentComponentWithPureCompExample';
 import RefComponent from './component/RefComponent';
+import RefExample from './component/RefExample';
 
 function App() {
   return (
@@ -45,7 +46,8 @@ function App() {
       {/* <ReactFragment/>
       <Table /> */}
       {/* <ParentComponentWithPureCompExample/>       */}
-      <RefComponent />
+      {/* <RefComponent /> */}
+      <RefExample/>
     </div>
   );
 }
