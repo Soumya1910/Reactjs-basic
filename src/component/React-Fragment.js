@@ -1,6 +1,12 @@
 import React from 'react'
 
 function ReactFragment() {
+
+    /*
+    Fragment allows you to add extra children without adding any extra tag in DOM.
+    */
+
+
     // return (
     //     <div>
     //         <h1>React Fragment demo</h1>
