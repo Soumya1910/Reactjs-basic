@@ -23,6 +23,8 @@ import ReactPortalsDemo from './component/ReactPortalsDemo';
 import ShowDialog from './component/ShowDialog';
 import Hero from './component/Hero';
 import ErrorBoundary from './component/ErrorBoundary';
+import ClickCounter from './component/higherOrderFunction/ClickCounter';
+import HoverCounter from './component/higherOrderFunction/OverCounter';
 
 function App() {
   return (
@@ -62,7 +64,7 @@ function App() {
         <Hero heroName='Joker' />
       </ErrorBoundary> */}
 
-      <ErrorBoundary>
+      {/* <ErrorBoundary>
         <Hero heroName='BatsMan' />
       </ErrorBoundary>
       <ErrorBoundary>
@@ -70,7 +72,10 @@ function App() {
       </ErrorBoundary>
       <ErrorBoundary>
         <Hero heroName='Joker' />
-      </ErrorBoundary>
+      </ErrorBoundary> */}
+
+      <ClickCounter />
+      <HoverCounter />
 
     </div>
   );
