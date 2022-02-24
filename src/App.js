@@ -21,6 +21,8 @@ import RefExample from './component/RefExample';
 import FwdRefParentInput from './component/FwdRefParentInput';
 import ReactPortalsDemo from './component/ReactPortalsDemo';
 import ShowDialog from './component/ShowDialog';
+import Hero from './component/Hero';
+import ErrorBoundary from './component/ErrorBoundary';
 
 function App() {
   return (
@@ -53,7 +55,23 @@ function App() {
       {/* <RefExample/> */}
       {/* <FwdRefParentInput/> */}
       {/* <ReactPortalsDemo/> */}
-      <ShowDialog/>
+      {/* <ShowDialog/> */}
+      {/* <ErrorBoundary>
+        <Hero heroName='BatsMan' />
+        <Hero heroName='SuperMan' />
+        <Hero heroName='Joker' />
+      </ErrorBoundary> */}
+
+      <ErrorBoundary>
+        <Hero heroName='BatsMan' />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Hero heroName='SuperMan' />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Hero heroName='Joker' />
+      </ErrorBoundary>
+
     </div>
   );
 }
