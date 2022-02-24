@@ -21,6 +21,7 @@ import RefExample from './component/RefExample';
 import FwdRefParentInput from './component/FwdRefParentInput';
 import ReactPortalsDemo from './component/ReactPortalsDemo';
 import Parent from './component/createPortal/Parent';
+import ParentModal from './component/createPortal/ParentModal';
 
 function App() {
   return (
@@ -53,7 +54,8 @@ function App() {
       {/* <RefExample/> */}
       {/* <FwdRefParentInput/> */}
       {/* <ReactPortalsDemo/> */}
-      <Parent/>
+      {/* <Parent/> */}
+      <ParentModal />
     </div>
   );
 }
