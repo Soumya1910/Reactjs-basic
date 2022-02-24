@@ -20,6 +20,7 @@ import RefComponent from './component/RefComponent';
 import RefExample from './component/RefExample';
 import FwdRefParentInput from './component/FwdRefParentInput';
 import ReactPortalsDemo from './component/ReactPortalsDemo';
+import ShowDialog from './component/ShowDialog';
 
 function App() {
   return (
@@ -51,7 +52,8 @@ function App() {
       {/* <RefComponent /> */}
       {/* <RefExample/> */}
       {/* <FwdRefParentInput/> */}
-      <ReactPortalsDemo/>
+      {/* <ReactPortalsDemo/> */}
+      <ShowDialog/>
     </div>
   );
 }
