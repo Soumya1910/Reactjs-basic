@@ -19,6 +19,7 @@ import ParentComponentWithPureCompExample from './component/ParentComponentWithP
 import RefComponent from './component/RefComponent';
 import RefExample from './component/RefExample';
 import FwdRefParentInput from './component/FwdRefParentInput';
+import ReactPortalsDemo from './component/ReactPortalsDemo';
 
 function App() {
   return (
@@ -49,7 +50,8 @@ function App() {
       {/* <ParentComponentWithPureCompExample/>       */}
       {/* <RefComponent /> */}
       {/* <RefExample/> */}
-      <FwdRefParentInput/>
+      {/* <FwdRefParentInput/> */}
+      <ReactPortalsDemo/>
     </div>
   );
 }
