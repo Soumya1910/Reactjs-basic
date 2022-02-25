@@ -3,7 +3,8 @@ import './App.css';
 import Greet from './component/Functional_Component_Example';
 import Welcome from './component/Class_Component_Example';
 import Message from './component/State_Component_Example';
-import Counter from './component/Counter';
+// import Counter from './component/Counter';
+import Counter from './component/renderFunction/Counter';
 import FunctionClick from './component/FunctionClick';
 import ClassClick from './component/ClassClick';
 import EventBind from './component/EventBind';
@@ -25,6 +26,8 @@ import Hero from './component/Hero';
 import ErrorBoundary from './component/ErrorBoundary';
 import ClickCounter from './component/higherOrderFunction/ClickCounter';
 import HoverCounter from './component/higherOrderFunction/OverCounter';
+import ClickMouseTwo from './component/renderFunction/ClickMouseTwo';
+import HoverCounterTwo from './component/renderFunction/HoverCounterTwo';
 
 function App() {
   return (
@@ -74,8 +77,15 @@ function App() {
         <Hero heroName='Joker' />
       </ErrorBoundary> */}
 
-      <ClickCounter />
-      <HoverCounter />
+      {/* <ClickCounter />
+      <HoverCounter /> */}
+
+      {/* <ClickMouseTwo/>
+      <HoverCounterTwo /> */}
+
+      <Counter render={(counter, incrementHandler) => <ClickMouseTwo counter={counter} incrementHandler={incrementHandler} />} />
+
+      <Counter render={(counter, incrementHandler) => <HoverCounterTwo counter={counter} incrementHandler={incrementHandler} />} />
 
     </div>
   );
