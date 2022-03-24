@@ -30,6 +30,11 @@ import ClickMouseTwo from './component/renderFunction/ClickMouseTwo';
 import HoverCounterTwo from './component/renderFunction/HoverCounterTwo';
 import ComponentC from './component/ContextFunction/ComponentC';
 import {UserProvider} from './component/ContextFunction/UserContext';
+import ComponentD from './component/ContextFunction/ComponentD';
+import { getByPlaceholderText } from '@testing-library/react';
+import ClassCounter from './component/Hooks/ClassCounter';
+import HookCounter from './component/Hooks/HookCounter';
+import IncrementDecrementCounter from './component/Hooks/IncrementDecrementCounter';
 
 function App() {
   return (
@@ -89,12 +94,42 @@ function App() {
 
       <Counter render={(counter, incrementHandler) => <HoverCounterTwo counter={counter} incrementHandler={incrementHandler} />} /> */}
 
-      <UserProvider value="Soumya"> 
+      {/* <UserProvider value="Soumya"> 
         <ComponentC />
-      </UserProvider>
+      </UserProvider> */}
+      
+      {/* <ClassCounter/> */}
+      {/* <HookCounter/> */}
+      <IncrementDecrementCounter />
       
     </div>
   );
 }
 
 export default App;
+
+/** 
+What are Hooks?
+Hooks are new feature addition to version of React 16.8 which allow you to use React features without having to write a class.
+Hooks don't work inside the class.
+
+Why Hooks?
+Reason 1:
+  Understand how this keyword works in Javascript.
+  Remember to bind even handlers in class components.
+  Classes don't minify very well and make hot reloading very unreliable.
+
+Reason 2:
+  There is no particular way to reuse stateful component logic.
+  HOC and render pattern do address this problem but need to restructure the code. Ending up with several other components to share functionality.
+  There is a need to share stateful logic in a better way. 
+
+Reason 3:
+  Create component for complex scenarios such as data fetching and subscribing to events, related code is not organized in one organized place. It's scattered.
+  e.g. 
+    Data Fetching - componentDidMount and componentDidUpdate
+    Event Listeners - componentDidMount and componentWillUnmount
+
+
+
+  */
