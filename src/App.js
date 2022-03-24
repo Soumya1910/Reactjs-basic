@@ -28,6 +28,8 @@ import ClickCounter from './component/higherOrderFunction/ClickCounter';
 import HoverCounter from './component/higherOrderFunction/OverCounter';
 import ClickMouseTwo from './component/renderFunction/ClickMouseTwo';
 import HoverCounterTwo from './component/renderFunction/HoverCounterTwo';
+import ComponentC from './component/ContextFunction/ComponentC';
+import {UserProvider} from './component/ContextFunction/UserContext';
 
 function App() {
   return (
@@ -83,10 +85,14 @@ function App() {
       {/* <ClickMouseTwo/>
       <HoverCounterTwo /> */}
 
-      <Counter render={(counter, incrementHandler) => <ClickMouseTwo counter={counter} incrementHandler={incrementHandler} />} />
+      {/* <Counter render={(counter, incrementHandler) => <ClickMouseTwo counter={counter} incrementHandler={incrementHandler} />} />
 
-      <Counter render={(counter, incrementHandler) => <HoverCounterTwo counter={counter} incrementHandler={incrementHandler} />} />
+      <Counter render={(counter, incrementHandler) => <HoverCounterTwo counter={counter} incrementHandler={incrementHandler} />} /> */}
 
+      <UserProvider value="Soumya"> 
+        <ComponentC />
+      </UserProvider>
+      
     </div>
   );
 }
