@@ -35,6 +35,7 @@ import { getByPlaceholderText } from '@testing-library/react';
 import ClassCounter from './component/Hooks/ClassCounter';
 import HookCounter from './component/Hooks/HookCounter';
 import IncrementDecrementCounter from './component/Hooks/IncrementDecrementCounter';
+import StateWithObject from './component/Hooks/StateWithObject';
 
 function App() {
   return (
@@ -100,7 +101,8 @@ function App() {
       
       {/* <ClassCounter/> */}
       {/* <HookCounter/> */}
-      <IncrementDecrementCounter />
+      {/* <IncrementDecrementCounter /> */}
+      <StateWithObject/>
       
     </div>
   );
