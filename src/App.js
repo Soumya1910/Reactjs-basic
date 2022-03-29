@@ -37,6 +37,8 @@ import HookCounter from './component/Hooks/HookCounter';
 import IncrementDecrementCounter from './component/Hooks/IncrementDecrementCounter';
 import StateWithObject from './component/Hooks/StateWithObject';
 import StateWithArray from './component/Hooks/StateWithArray';
+import ClassCounterOne from './component/Hooks/UseEffectHooks/ClassCounterOne';
+import HookCounterOne from './component/Hooks/UseEffectHooks/HookCounterOne';
 
 function App() {
   return (
@@ -104,7 +106,9 @@ function App() {
       {/* <HookCounter/> */}
       {/* <IncrementDecrementCounter /> */}
       {/* <StateWithObject/> */}
-      <StateWithArray />
+      {/* <StateWithArray /> */}
+      {/* <ClassCounterOne/> */}
+      <HookCounterOne/>
       
     </div>
   );
