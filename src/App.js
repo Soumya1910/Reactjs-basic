@@ -8,6 +8,15 @@ import Counter from './component/Counter';
 function App() {
   return (
     <div className="App">
+
+      {/* Branch Name: 1_Component
+      Topic: Component Example */}
+      {/* <Greet/> */}
+      {/* <Welcome/> */}
+
+      {/* Branch Name: 2_props_state
+      Topic: Props & State management */}
+
       {/* <Greet name="Soumya" age= "30">
         This is a children props
       </Greet>
