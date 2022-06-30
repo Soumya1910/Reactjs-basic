@@ -39,6 +39,7 @@ import StateWithObject from './component/Hooks/StateWithObject';
 import StateWithArray from './component/Hooks/StateWithArray';
 import ClassCounterOne from './component/Hooks/UseEffectHooks/ClassCounterOne';
 import HookCounterOne from './component/Hooks/UseEffectHooks/HookCounterOne';
+import IntervalClassCounter from './component/Hooks/UseEffectHooks/IntervalClassCounter';
 
 function App() {
   return (
@@ -108,7 +109,8 @@ function App() {
       {/* <StateWithObject/> */}
       {/* <StateWithArray /> */}
       {/* <ClassCounterOne/> */}
-      <HookCounterOne/>
+      {/* <HookCounterOne/> */}
+      <IntervalClassCounter />
       
     </div>
   );
